@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /*  utilizado no display flex para colocar a img no canto esquerdo e o menu nav no direito, dando um espaço entre eles  */
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto; /* cria uma margem automatica do lado */
+  padding: 40px 20px;
+  align-items: center;
+}
+.menu a {
+  color: #141414;
+  padding: 10px 20px; /* utilizado também para aumentar a área de click dentro de um link */
+  font-size: 1.1rem;
+  display: block; /* para pegar corretamente os valores do padding */
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap; /*  para quebrar o menu quando for diminuindo */
+  gap: 10px;
+  justify-content: center; /* coloca os itens todos no meio, principalmente quando a tela esta pequena, abaixo de 400px */
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column; /*  coloca os itens um abaixo do outro */
+    gap: 40px;
+    padding: 20px;
+  }
+  .menu a {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: solid 2px transparent;
+  }
+  .menu a:hover{
+    border: solid 2px #F0F0F0;
+  }
+}

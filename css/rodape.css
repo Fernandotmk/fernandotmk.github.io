@@ -1,0 +1,44 @@
+.rodape {
+  background-color: #000;
+  padding-top: 120px;
+  color: #CCCCCC;
+  font-weight: 400;
+}
+
+.informacoes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: #FFF;
+  padding:  20px;
+}
+
+.disponivel {
+  max-width: 35ch;
+  line-height: 1.3;
+  padding-top: 50px;
+  color: #CCCCCC;
+}
+
+.direitos {
+  font-size: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #8F8F8F;
+}
+.informacoes ul li {
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+@media (max-width: 800px) {
+  .informacoes {
+    grid-template-columns: 1fr;
+  }
+  .informacoes ul {
+    margin-top: 40px;
+  }
+}
